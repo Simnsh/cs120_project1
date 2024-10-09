@@ -79,7 +79,7 @@ body {
 }
 
 .moving-footer .sponsor-section {
-  padding-right: 500px;
+  padding-right: 200px;
   margin-bottom: 20px;
   text-align: left;
   display: flex;
@@ -105,9 +105,12 @@ body {
 /* General Mobile Styles for project1.html*/
 @media (max-width: 600px) {
   .background-section {
-    height: 50vh;
+    width: 800px;
+    height: 430px;
+    background-image: url("sunset_echo.jpg");
+    background-size: auto;
     background-position: center;
-    padding: 10px;
+    background-repeat: no-repeat;
   }
 
   .overlay-text {
@@ -115,17 +118,18 @@ body {
   }
 
   .moving-footer {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 10px;
   }
 
   .moving-footer .social-icons {
+    margin: 10px 0;
     gap: 10px;
-    width: 50%;
-    text-align: left;
+    display: flex;
+    justify-content: center;
   }
 
   .moving-footer .social-icons svg {
@@ -134,19 +138,13 @@ body {
   }
 
   .moving-footer .sponsor-section {
-    text-align: right;
+    margin: 10px 0;
+    text-align: center;
     padding: 0;
-    margin: 0;
-    width: 50%;
   }
 
-  /* .moving-footer .social-icons,
-  .moving-footer .sponsor-section {
-    flex: 1;
-  } */
-
   .moving-footer .sponsor-section p {
-    margin-top: 0 0 5px 0;
+    margin-top: 5px 0;
   }
 
   .moving-footer .sponsor-section ul {

@@ -63,7 +63,7 @@
       }
 
       .moving-footer .sponsor-section {
-        padding-right: 500px;
+        padding-right: 200px;
         margin-bottom: 20px;
         text-align: left;
         display: flex;
@@ -124,6 +124,61 @@
         list-style-type: none;
         padding-left: 2px;
         margin-bottom: 5px;
+      }
+      /*mobile view for footer*/
+      /* General Mobile Styles for project1.html*/
+      @media (max-width: 600px) {
+        .background-section {
+          width: 800px;
+          height: 430px;
+          background-image: url("sunset_echo.jpg");
+          background-size: auto;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+
+        .overlay-text {
+          font-size: 2.5em;
+        }
+
+        .moving-footer {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          padding: 10px;
+        }
+
+        .moving-footer .social-icons {
+          margin: 10px 0;
+          gap: 10px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .moving-footer .social-icons svg {
+          width: 24px;
+          height: 24px;
+        }
+
+        .moving-footer .sponsor-section {
+          margin: 10px 0;
+          text-align: center;
+          padding: 0;
+        }
+
+        .moving-footer .sponsor-section p {
+          margin-top: 5px 0;
+        }
+
+        .moving-footer .sponsor-section ul {
+          margin: 0;
+          padding: 0;
+        }
+
+        .moving-footer .sponsor-section ul li {
+          padding-bottom: 8px;
+        }
       }
     </style>
 
