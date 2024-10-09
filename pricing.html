@@ -2,7 +2,132 @@
   <header>
     <title>Project 1</title>
 
-    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      .navbar ul li {
+        display: inline-block;
+        padding: 10px 20px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: #f9a602;
+      }
+
+      .moving-footer {
+        background-color: #333;
+        padding: 10px 20px;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .moving-footer .social-icons {
+        display: flex;
+        margin-left: 400px;
+        gap: 20px;
+      }
+
+      .moving-footer .social-icons svg {
+        width: 35px;
+        height: 35px;
+        fill: aliceblue;
+        /* add hand emoji when mouse onto icons*/
+        cursor: pointer;
+        transition: fill 0.3s;
+      }
+      .moving-footer .social-icons svg:hover {
+        fill: #f9a602;
+      }
+
+      .moving-footer .sponsor-section {
+        padding-right: 500px;
+        margin-bottom: 20px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .moving-footer .sponsor-section p {
+        margin-top: 25px;
+        /* font-weight: bold; */
+        font-size: 1.3rem;
+      }
+
+      .moving-footer .sponsor-section ul {
+        list-style: none;
+        margin-top: -10px;
+        margin-left: -30px;
+      }
+
+      .moving-footer .sponsor-section ul li {
+        padding-bottom: 5px;
+      }
+
+      section {
+        /* background-color: lightgray; */
+        background: linear-gradient(to right, #44637f, #2c3e50);
+        padding-bottom: 0px;
+        padding-left: 10px;
+        margin-top: 0px;
+      }
+      .fares {
+        color: black;
+        font-size: 3.5rem;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding-top: 50px;
+        padding-left: 20px;
+      }
+      .pricing-background ul {
+        color: lightpink;
+        font-size: 1.8rem;
+        margin: 0px;
+        list-style-type: none;
+        padding-left: 25px;
+        margin-bottom: 40px;
+      }
+      .additional {
+        margin-top: 350px;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+        padding-left: 25px;
+        color: white;
+        font-size: 1.2rem;
+      }
+
+      .sponsor-section li {
+        font-size: 1rem;
+        margin: 0px;
+        list-style-type: none;
+        padding-left: 2px;
+        margin-bottom: 5px;
+      }
+    </style>
+
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,8 +146,24 @@
       </ul>
     </nav>
 
-    <section class="background-section">
-      <h1 class="overlay-text">Sunset Echo</h1>
+    <section class="pricing-background">
+      <h1 class="fares">Fares</h1>
+      <ul>
+        <li>4 members | 3 hours: $1200</li>
+        <li>6 members | 3 hours: $1700</li>
+        <br />
+        <li>4 members | 5 hours: $1600</li>
+        <li>6 members | 5 hours: $2400</li>
+      </ul>
+      <p class="additional">
+        *4 members consist of vocalist, guitarist, drummer, and keyboard player
+        <br />
+        *6 members consist of 2 vocalist, rhythm guitarist, bass guitarist,
+        drummer, and keyboard player
+        <br />
+        *These fares are for individual event, please
+        <a href="contact.html">contact</a> for fares of regular performances.
+      </p>
     </section>
 
     <footer class="moving-footer">
