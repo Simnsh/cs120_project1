@@ -332,6 +332,26 @@ body {
   border-radius: 10px;
 }
 
+/*bio.html styling for mobile*/
+@media (max-width: 600px) {
+  .larger-text {
+    font-size: 2rem;
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .smaller-text {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+
+  .bio-container h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+}
+
 /*schedule styling*/
 .schedule-container {
   background: linear-gradient(to right, #44637f, #2c3e50);
@@ -371,22 +391,35 @@ td {
   color: rgb(236, 43, 236);
 }
 
-/*bio.html styling for mobile*/
+/* schedule.html styling for mobile */
 @media (max-width: 600px) {
-  .larger-text {
-    font-size: 2rem;
-    max-width: 800px;
-    padding: 20px;
-  }
-
-  .smaller-text {
-    font-size: 1rem;
-    max-width: 600px;
-  }
-
-  .bio-container h3 {
+  .schedule-container h2 {
     font-size: 1.5rem;
-    margin-top: 20px;
-    margin-left: 10px;
+    padding: 15px 20px;
+  }
+
+  .schedule-container table {
+    width: 100%;
+    margin-left: 0;
+    overflow-x: auto;
+  }
+
+  td,
+  th {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  th {
+    font-weight: bold;
+    color: lightcyan;
+  }
+
+  td {
+    color: lightpink;
+  }
+
+  .date {
+    color: rgb(236, 43, 236);
   }
 }
